@@ -153,8 +153,7 @@ class Printer:
             image = image.transpose(Image.ROTATE_90)
 
         # width 384 dots
-        # IMAGE_WIDTH_BYTES = 70
-        IMAGE_WIDTH_BYTES = 50
+        IMAGE_WIDTH_BYTES = 70
         IMAGE_WIDTH_BITS = IMAGE_WIDTH_BYTES * 8
         image = image.resize(
             size=(IMAGE_WIDTH_BITS, int(image.height * IMAGE_WIDTH_BITS / image.width))
